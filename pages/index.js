@@ -1,10 +1,15 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
-
+import Head from 'next/head';
+import TopLandingPage from '@/components/top_landing_page/top_landing_page';
+import TvDemo from '@/components/tvDemo/tvDemo';
+import tv from '../public/static/tv.png';
+import tv1 from '../public/static/tv1.png';
+import kids from '../public/static/kids.png';
+import FAQ from '@/components/faq/faq';
+import Footer from '@/components/footer/footer';
+import Image from 'next/image';
+import stranger from '../public/static/stranger.jpg';
+import boxshot from '../public/static/boxshot.png';
+import download from '../public/static/download-icon.gif';
 export default function Home() {
   return (
     <>
@@ -14,110 +19,61 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.js</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </div>
-        </div>
+      <main className="min-h-screen flex w-full flex-col">
+        <TopLandingPage />
+        <TvDemo
+          picture={tv}
+          video={'/static/video-tv-0819.m4v'}
+          header={'Enjoy on your TV'}
+          sub={
+            'Watch on smart TVs, Playstation, Xbox. Chromecast, Apple TV, Blu-ray players, and more.'
+          }
+        />
+        <TvDemo
+          direction={'flex-row-reverse'}
+          header={'Download your shows to watch offline.'}
+          borderB={8}
+          sub={'Save your favorites easily and always have something to watch.'}
+        >
+          {' '}
+          <span className="w-[90%] h-full relative">
+            <Image src={stranger} className="w-full h-full" alt="stranger" />
+            <div className="h-[100px] flex items-center justify-between rounded-xl p-4 bg-black bottom-10 z-30 absolute left-1/2 -translate-x-1/2  w-[60%] border-zinc-500 border-2">
+              <Image src={boxshot} className="w-[50px] h-full" alt="stranger" />
+              <div className="flex flex-col">
+                <h4 className="text-white text-xl">Stranger Things</h4>
+                <h5 className="text-blue-500">Downloading...</h5>
+              </div>
+              <div
+                className="h-full w-[20%] md:w-[100px] bg-no-repeat bg-center"
+                style={{ backgroundImage: `url(${download.src})` }}
+              ></div>
+            </div>
+          </span>
+        </TvDemo>
+        <TvDemo
+          picture={tv1}
+          video={'/static/video-tv-08191.m4v'}
+          header={'Watch everywhere'}
+          className="w-[350px] md:w-[400px] md:top-[-140px] top-[-160px] h-[600px]"
+          sub={
+            'Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.'
+          }
+        />
 
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
+        <TvDemo
+          picture={kids}
+          direction={'flex-row-reverse'}
+          video={''}
+          header={'Enjoy on your TV'}
+          borderB={8}
+          sub={
+            'Watch on smart TVs, Playstation, Xbox. Chromecast, Apple TV, Blu-ray players, and more.'
+          }
+        />
+        <FAQ />
+        <Footer />
       </main>
     </>
-  )
+  );
 }
