@@ -6,7 +6,7 @@ import { IoMdArrowDropdown } from 'react-icons/io';
 import Sub from '../sub/sub';
 export default function TopLandingPage() {
   return (
-    <div className="w-full flex flex-col  md:pb-0 items-start justify-start relative min-h-screen ">
+    <div className="w-full pb-10 md:pb-0 flex flex-col  md:pb-0 items-start justify-start relative md:min-h-screen ">
       <header className="box-border w-full py-5 px-4 md:px-36">
         <nav className="h-full w-full justify-between  flex items-center">
           <Image alt="logo" className="h-5 md:h-12 w-auto" src={logo} />
@@ -21,7 +21,7 @@ export default function TopLandingPage() {
           </div>
         </nav>
       </header>
-      <div className="w-full px-2 md:px-5 m-auto gap-6 flex flex-col items-center">
+      <div className="w-full text-center md:text-left px-2 md:px-5 m-auto gap-6 flex flex-col items-center">
         <h1 className="md:text-7xl text-3xl md:w-5/6 w-full h-min text-center px-2 font-bold text-white">
           Unlimited movies, TV shows, and more.
         </h1>

@@ -18,7 +18,7 @@ export default function FAQ() {
             watch is Netflix? <FiPlus />{' '}
           </label>
           <input
-            type="radio"
+            type="checkbox"
             className="hidden peer"
             aria-label={el}
             name="faq"

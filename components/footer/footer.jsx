@@ -22,7 +22,7 @@ export default function Footer() {
           'Media Center',
           'Redeem Gift Cards',
           'Terms of Use',
-          'Corperatw Information',
+          'Corperate Information',
           'Legal Guarantee',
           'Help Center',
           'Investor Relations',

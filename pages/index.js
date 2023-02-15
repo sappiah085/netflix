@@ -55,7 +55,7 @@ export default function Home() {
           picture={tv1}
           video={'/static/video-tv-08191.m4v'}
           header={'Watch everywhere'}
-          className="w-[350px] md:w-[400px] md:top-[-140px] top-[-160px] h-[600px]"
+          className="w-[63%]  top-[10%] "
           sub={
             'Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.'
           }

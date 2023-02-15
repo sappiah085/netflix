@@ -8,7 +8,7 @@ export default function TvDemo({
   sub,
   direction,
   borderB = 2,
-  className = 'w-[500px] h-full top-[-10px] left-[85px]  ',
+  className = 'w-[73%]  h-auto top-[20%] -translate-x-[50%] left-[50%]  ',
 }) {
   return (
     <div
@@ -18,11 +18,11 @@ export default function TvDemo({
         direction
       }
     >
-      <div className="min-w-[290px] flex flex-col gap-7 md:w-1/2">
+      <div className="min-w-[290px] md:text-left text-center flex flex-col gap-7 md:w-1/2">
         <h1 className="text-white text-2xl md:text-7xl font-bold">{header}</h1>
         <p className="text-white text-md md:text-2xl">{sub}</p>
       </div>
-      <div className="min-w-[290px] overflow-hidden bg-no-repeat bg-center z-10  w-full md:w-2/3  h-[450px]  relative flex justify-center items-center">
+      <div className="min-w-[290px] overflow-hidden bg-no-repeat bg-center z-10  w-full md:w-2/3  relative flex justify-center items-center">
         {children}
         {picture && (
           <Image src={picture} className="w-full h-full z-10" alt="tv" />
@@ -31,10 +31,13 @@ export default function TvDemo({
           {video && (
             <video
               loop
-              className="h-full w-full absolute top-0 left-0 "
+              playsInline
+              muted
+              className=" object-contain overflow-clip w-full absolute top-0 left-0 "
               autoPlay
             >
-              <source src={video} type="video/webm" />
+              <source src={video} type="video/mp4" />
+              Your browser does not support the video tag.
             </video>
           )}
         </span>
