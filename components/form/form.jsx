@@ -8,7 +8,7 @@ export default function Form() {
   return (
     <form
       action="#"
-      className="flex md:bg-black/75 md:py-24 md:px-11 max-w-lg m-auto flex-col mb-44 w-full gap-8 justify-center p-4 "
+      className="flex md:rounded-sm md:bg-black/75 md:py-24 md:px-11 max-w-lg m-auto flex-col mb-44 w-full gap-8 justify-center p-4 "
     >
       <h3 className="text-white text-3xl font-bold">Sign In</h3>
       <div className="flex flex-col gap-6">
