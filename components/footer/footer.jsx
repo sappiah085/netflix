@@ -41,7 +41,7 @@ export default function Footer() {
         ))}
       </div>
       <button className="py-2 mt-8 w-[140px] md:py-1 px-5 flex items-center gap-2 rounded-md text-white border-white border">
-        <TfiWorld /> <span className="hidden md:inline"> English</span>{' '}
+        <TfiWorld /> <span className=" md:inline"> English</span>{' '}
         <IoMdArrowDropdown />
       </button>
       <a className=" mt-2 text-zinc-400 text-md " href="telephone:+36208090899">

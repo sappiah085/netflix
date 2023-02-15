@@ -2,7 +2,7 @@ import Image from 'next/image';
 import bg from '../../public/static/back.jpg';
 import logo from '../../public/static/netflix.svg';
 import { TfiWorld } from 'react-icons/tfi';
-import { IoMdArrowDropdown, IoIosArrowForward } from 'react-icons/io';
+import { IoMdArrowDropdown } from 'react-icons/io';
 import Sub from '../sub/sub';
 export default function TopLandingPage() {
   return (
@@ -21,14 +21,14 @@ export default function TopLandingPage() {
           </div>
         </nav>
       </header>
-      <div className="w-max px-5 md:mt-auto mt-10 m-auto gap-6 flex flex-col items-center">
+      <div className="w-full px-5 md:mt-auto mt-10 m-auto gap-6 flex flex-col items-center">
         <h1 className="md:text-7xl text-3xl md:w-5/6 w-full h-min text-center px-2 font-bold text-white">
           Unlimited movies, TV shows, and more.
         </h1>
         <h2 className="md:text-4xl text-xl brightness-110 text-white">
           Watch anywhere. Cancel anytime.
         </h2>
-        
+
         <Sub />
       </div>
 

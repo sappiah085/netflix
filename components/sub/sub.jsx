@@ -25,7 +25,7 @@ export default function Sub() {
         </span>
         <button
           type="submit"
-          className=" py-4 border-none  flex items-center px-5 hover:bg-[#ff0000c3] rounded-md bg-red-600 text-white border-red-600 border"
+          className=" py-4 border-none flex-nowrap  flex items-center px-2 md:px-5 hover:bg-[#ff0000c3] rounded-md bg-red-600 text-white border-red-600 border"
         >
           Get Started <IoIosArrowForward />
         </button>
