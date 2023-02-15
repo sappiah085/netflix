@@ -4,9 +4,10 @@ import logo from '../../public/static/netflix.svg';
 import { TfiWorld } from 'react-icons/tfi';
 import { IoMdArrowDropdown } from 'react-icons/io';
 import Sub from '../sub/sub';
+import Link from 'next/link';
 export default function TopLandingPage() {
   return (
-    <div className="w-full pb-10 md:pb-0 flex flex-col  md:pb-0 items-start justify-start relative md:min-h-screen ">
+    <div className="w-full pb-10 md:pb-0 flex flex-col   items-start justify-start relative md:min-h-screen ">
       <header className="box-border w-full py-5 px-4 md:px-36">
         <nav className="h-full w-full justify-between  flex items-center">
           <Image alt="logo" className="h-5 md:h-12 w-auto" src={logo} />
@@ -15,9 +16,12 @@ export default function TopLandingPage() {
               <TfiWorld /> <span className="hidden md:inline"> English</span>{' '}
               <IoMdArrowDropdown />
             </button>
-            <button className="py-1 px-5 hover:bg-[#ff0000c3] rounded-md bg-red-600 text-white border-red-600 border">
+            <Link
+              href={'/login'}
+              className="py-1 px-5 hover:bg-[#ff0000c3] rounded-md bg-red-600 text-white border-red-600 border"
+            >
               Sign In
-            </button>
+            </Link>
           </div>
         </nav>
       </header>

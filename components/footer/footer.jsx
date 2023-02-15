@@ -1,8 +1,10 @@
 import { TfiWorld } from 'react-icons/tfi';
 import { IoMdArrowDropdown } from 'react-icons/io';
-export default function Footer() {
+export default function Footer({ border }) {
   return (
-    <div className="border-t-8 bg-black px-10 md:px-[200px] py-14 border-zinc-600 w-full flex flex-col">
+    <div
+      className={`border-t-${border} bg-black px-10 md:px-[200px] py-14 border-zinc-600 w-full flex flex-col`}
+    >
       <span className="text-zinc-400 text-lg ">
         Questions? Call{' '}
         <a className="underline " href="telephone:+36208090899">
