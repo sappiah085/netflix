@@ -12,7 +12,7 @@ export default function FAQ() {
           className=" w-full overflow-hidden   flex flex-col max-w-6xl "
         >
           <label
-            className="text-white hover:bg-zinc-700  bg-zinc-600 text-3xl z-20 px-8 py-7 cursor-pointer flex items-center w-full justify-between"
+            className="text-white hover:bg-zinc-700  bg-zinc-600 text-xl md:text-3xl z-20 px-8 py-7 cursor-pointer flex items-center w-full justify-between"
             htmlFor={el}
           >
             watch is Netflix? <FiPlus />{' '}
@@ -24,7 +24,7 @@ export default function FAQ() {
             name="faq"
             id={el}
           />
-          <p className="text-white bg-zinc-600  text-xl transform h-0  py-0  px-8  transition-all peer-checked:border-t-[1px] border-zinc-900 peer-checked:h-min  peer-checked:py-7 duration-500 overflow-hidden ">
+          <p className="text-white bg-zinc-600   md:text-xl transform h-0  py-0  px-8  transition-all peer-checked:border-t-[1px] border-zinc-900 peer-checked:h-min  peer-checked:py-7 duration-500 overflow-hidden ">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Distinctio, quaerat repellendus facere neque commodi modi nam autem
             sed dolore? Dolores, illum ad vero cupiditate accusamus assumenda
