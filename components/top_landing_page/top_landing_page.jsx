@@ -21,14 +21,13 @@ export default function TopLandingPage() {
           </div>
         </nav>
       </header>
-      <div className="w-full px-5 md:mt-auto mt-10 m-auto gap-6 flex flex-col items-center">
+      <div className="w-full px-2 md:px-5 md:mt-auto mt-10 m-auto gap-6 flex flex-col items-center">
         <h1 className="md:text-7xl text-3xl md:w-5/6 w-full h-min text-center px-2 font-bold text-white">
           Unlimited movies, TV shows, and more.
         </h1>
         <h2 className="md:text-4xl text-xl brightness-110 text-white">
           Watch anywhere. Cancel anytime.
         </h2>
-
         <Sub />
       </div>
 

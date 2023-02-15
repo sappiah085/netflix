@@ -2,8 +2,8 @@ import { FiPlus } from 'react-icons/fi';
 import Sub from '../sub/sub';
 export default function FAQ() {
   return (
-    <div className="bg-black flex justify-center gap-4 flex-col items-center border-t-4 px-10 py-24 border-zinc-400">
-      <h1 className="text-7xl font-bold mb-8 text-white">
+    <div className="bg-black flex justify-center gap-4 flex-col items-center border-t-4 px-2 md:px-10 py-24 border-zinc-400">
+      <h1 className="md:text-7xl text-2xl font-bold mb-8 text-white">
         Frequently Asked Questions
       </h1>
       {[1, 2, 4, 5, 6, 7].map((el) => (
@@ -41,7 +41,7 @@ export default function FAQ() {
           </p>
         </div>
       ))}
-      <span className="mt-11 w-full flex items-center flex-col gap-8">
+      <span className="mt-11 text-center w-full flex items-center flex-col gap-8">
         <Sub />
       </span>
     </div>

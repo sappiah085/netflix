@@ -9,7 +9,7 @@ export default function Footer() {
           36208090899
         </a>
       </span>
-      <div className="grid grid-cols-3 mt-10">
+      <div className="grid gap-5 grid-cols-3 mt-10">
         {[
           'FAQ',
           'Account',
