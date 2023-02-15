@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useState } from 'react';
 
 export default function Form() {
@@ -71,9 +72,9 @@ export default function Form() {
       </div>
       <div className="text-zinc-300">
         New to Netflix?{' '}
-        <a className="text-white font-bold" href="#">
+        <Link href="/" className="text-white font-bold">
           Sign up now
-        </a>
+        </Link>
       </div>
       <div className="w-full">
         <p className="text-zinc-200">
