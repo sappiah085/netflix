@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 export default function Form() {
   const [values, setValues] = useState({ email: '', password: '' });
+  const [show, setShow] = useState(true);
   function handleInput(e, name) {
     setValues((pre) => ({ ...pre, [name]: e.target.value }));
   }
@@ -40,7 +41,7 @@ export default function Form() {
             className="peer rounded-md border-0  invalid:border-b-2 border-orange-500 bg-zinc-400/40 md:bg-zinc-700 w-full  text-white outline-none px-4 py-4"
             minLength={4}
             maxLength={60}
-            type="password"
+            type={!show ? 'text' : 'password'}
             autoComplete="true"
             id="pass"
             placeholder=" "
@@ -52,6 +53,12 @@ export default function Form() {
           >
             Password
           </label>
+          <button
+            onClick={() => setShow((pre) => !pre)}
+            className="text-zinc-300 z-490 cursor-pointer bg-transparent border-none  absolute right-4 top-[50%] hidden peer-hover:block translate-y-[-50%]"
+          >
+            {show ? 'SHOW' : 'HIDE'}
+          </button>
           <span className="peer-invalid:block absolute hidden text-orange-400 ">
             Your password must contain between 4 and 60 characters.
           </span>
