@@ -10,7 +10,7 @@ export default function Form() {
   return (
     <form
       action="/profilesGate"
-      className="flex md:rounded-sm md:bg-black/75 md:py-24 md:px-11 max-w-lg m-auto flex-col mb-44 w-full gap-8 justify-center p-4 "
+      className="flex md:rounded-md md:bg-black/80 md:py-24 md:px-11 max-w-lg m-auto flex-col mb-44 w-full gap-8 justify-center p-4 "
     >
       <h3 className="text-white text-3xl font-bold">Sign In</h3>
       <div className="flex flex-col gap-6">
@@ -31,7 +31,7 @@ export default function Form() {
           >
             Email or phone number
           </label>
-          <span className="peer-invalid:block absolute hidden text-orange-400 ">
+          <span className="peer-invalid:block text-sm absolute hidden text-orange-400 ">
             Please enter a valid email or phone number.
           </span>
         </span>
@@ -59,7 +59,7 @@ export default function Form() {
           >
             {show ? 'SHOW' : 'HIDE'}
           </button>
-          <span className="peer-invalid:block absolute hidden text-orange-400 ">
+          <span className="peer-invalid:block text-sm absolute hidden text-orange-400 ">
             Your password must contain between 4 and 60 characters.
           </span>
         </span>
