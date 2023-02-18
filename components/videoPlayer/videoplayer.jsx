@@ -17,7 +17,7 @@ export default function VideoPlayer() {
     <div className="hidden  after:bg-black/25 gap-6 after:absolute after:top-0 after:left-0 after:w-full after:h-full relative h-[90vh] w-full md:flex flex-col justify-center">
       <video
         className="w-full drop-shadow-md left-0 top-0 absolute object-cover h-full fade-video"
-        // autoPlay
+        autoPlay
         ref={video}
         onEnded={play}
         muted={mute}

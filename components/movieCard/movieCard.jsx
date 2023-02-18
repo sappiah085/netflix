@@ -9,7 +9,6 @@ export default function MovieCard() {
     >
       <Image
         src={stranger}
-        priority
         className="w-full h-full "
         alt="movie image"
       />
