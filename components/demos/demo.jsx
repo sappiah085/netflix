@@ -26,12 +26,12 @@ export default function Demos() {
         sub={'Save your favorites easily and always have something to watch.'}
       >
         {' '}
-        <span className="md:w-[90%] w-full md:h-full h-auto relative">
+        <span className="md:w-[90%]  w-full md:h-full h-auto relative">
           <Image src={stranger} className="w-full h-full" alt="stranger" />
-          <div className="h-[100px] flex items-center justify-between rounded-xl p-4 bg-black md:bottom-10 bottom-1 z-30 absolute left-1/2 -translate-x-1/2  w-full md:w-[60%] border-zinc-500 border-2">
+          <div className="h-[100px] flex items-center gap-1 justify-between rounded-xl p-4 bg-black md:bottom-10 bottom-1 z-30 absolute left-1/2 -translate-x-1/2  w-full md:w-[60%] border-zinc-500 border-2">
             <Image src={boxshot} className="w-[50px] h-full" alt="stranger" />
             <div className="flex flex-col">
-              <h4 className="text-white text-xl">Stranger Things</h4>
+              <h4 className="text-white text-md">Stranger Things</h4>
               <h5 className="text-blue-500">Downloading...</h5>
             </div>
             <div

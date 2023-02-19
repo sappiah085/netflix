@@ -5,7 +5,7 @@ export default function Sub() {
       <h2 className="md:text-2xl text-xl  brightness-200 text-white">
         Ready to watch? Enter your email to create or restart your membership.
       </h2>
-      <form className=" gap-y-5 flex flex-wrap md:flex-nowrap  md:w-6/12 w-full justify-center items-center">
+      <form className=" gap-y-5 flex gap-x-1 flex-wrap md:flex-nowrap  md:w-6/12 w-full justify-center items-center">
         {' '}
         <span className="md:w-4/6 w-full p-0   relative">
           <input

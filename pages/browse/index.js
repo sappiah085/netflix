@@ -30,9 +30,9 @@ export default function Browse() {
       <NavForMobile />
       <NavForLarge navBack={navBack} />
       <VideoPlayer />
-      <div className="w-full pb-8 md:-mt-[140px] md:z-50 relative flex flex-col  overflow-y-scroll md:overflow-y-visible gap-10 md:gap-5 h-screen pt-20 md:pt-0 ">
-        <Category edit label={'Popular on Netflix'} />
-        {links.map(({ label }, id) => (
+      <div className="w-full pb-8 md:-mt-[100px] md:z-50 relative flex flex-col  overflow-y-scroll md:overflow-y-visible gap-10 md:gap-5 h-screen pt-20 md:pt-0 ">
+        <Category label={'Popular on Netflix'} />
+        {links.slice(1, 4).map(({ label }, id) => (
           <Category key={label} label={label} />
         ))}
         <Footer />

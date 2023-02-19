@@ -38,7 +38,6 @@ export default function VideoPlayer() {
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor quis
             ad quod at, nam illo reiciendis velit id aliquid laborum architecto,
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Blanditiis, iusto nisi!
           </p>
         )}
